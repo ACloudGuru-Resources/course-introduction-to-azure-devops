@@ -1,0 +1,33 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+
+<div class="row">
+    <div class="col-md-12">
+        <h2>New message</h2>
+        <form class="form-inline" method="post">
+            <div class="form-group">
+                <label for="inputName">Name</label>
+                <input id="inputName" type="text" name="name" value="@Model.NewMessageViewModel.Name" />
+            </div>
+            <div class="form-group">
+                <label for="inputMessage">Message</label>
+                <input id="inputMessage" type="text" name="message" value="@Model.NewMessageViewModel.Message" />
+            </div>
+            
+            <button type="submit" class="btn btn-primary">Send message!</button>
+        </form>
+    </div>
+    <div class="col-md-12">
+        <h2>Recent messages</h2>
+        @foreach(var entry in Model.RecentMessagesViewModel.Messages)
+        {
+            <p style="border-left: 2px solid black; padding-left: 10px; font-size: 14px; margin-bottom: 25px;">
+                <b>@entry.Name</b> @@ <i>@entry.Timestamp.ToLocalTime()</i>: @entry.Message
+            </p>
+        }
+    </div>
+</div>
