@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.28407.52
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Miniboard", "Miniboard\Miniboard.csproj", "{2DBB0171-6F51-4C2D-B749-1873457DE021}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Miniboard", "Miniboard\Miniboard.csproj", "{2DBB0171-6F51-4C2D-B749-1873457DE021}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Miniboard.UnitTest", "Miniboard.UnitTest\Miniboard.UnitTest.csproj", "{917D14A0-057F-4744-8E7D-1B850A50F5C3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Miniboard.UISmokeTest", "Miniboard.UISmokeTest\Miniboard.UISmokeTest.csproj", "{84A8F33A-6FA3-4E9D-A311-9D254A148E41}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{2DBB0171-6F51-4C2D-B749-1873457DE021}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2DBB0171-6F51-4C2D-B749-1873457DE021}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2DBB0171-6F51-4C2D-B749-1873457DE021}.Release|Any CPU.Build.0 = Release|Any CPU
+		{917D14A0-057F-4744-8E7D-1B850A50F5C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{917D14A0-057F-4744-8E7D-1B850A50F5C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{917D14A0-057F-4744-8E7D-1B850A50F5C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{917D14A0-057F-4744-8E7D-1B850A50F5C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84A8F33A-6FA3-4E9D-A311-9D254A148E41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84A8F33A-6FA3-4E9D-A311-9D254A148E41}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84A8F33A-6FA3-4E9D-A311-9D254A148E41}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84A8F33A-6FA3-4E9D-A311-9D254A148E41}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

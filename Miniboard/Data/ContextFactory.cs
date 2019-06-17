@@ -10,11 +10,25 @@ namespace Miniboard.Data
 
         public ContextFactory(IConfiguration configuration)
         {
+            if (configuration == null)
+            {
+                throw new ArgumentNullException(nameof(configuration));
+            }
+
+            if (configuration["SqlDatabase.ConnectionString"] == null)
+            {
+                throw new InvalidOperationException("Provided configuration does not contain a connectionstring");
+            }
+
             _connectionString = configuration["SqlDatabase.ConnectionString"];
         }
 
         public ContextFactory(string connectionString)
         {
+            if (connectionString == null)
+            {
+                throw new ArgumentNullException(nameof(connectionString));
+            }
             _connectionString = connectionString;
         }
 

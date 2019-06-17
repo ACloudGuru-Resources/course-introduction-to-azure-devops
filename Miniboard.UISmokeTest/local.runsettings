@@ -1,0 +1,5 @@
+﻿<RunSettings>  
+    <TestRunParameters>
+        <Parameter name="WebAppUrl" value="https://acgreleasedemo.azurewebsites.net/" />
+    </TestRunParameters>
+</RunSettings>  
